@@ -1,3 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BuildLogic App Store</title>
+  <style>
+    body{font-family:system-ui,Arial;margin:0;background:#0b0f14;color:#e8eef6}
+    header{padding:20px 18px;border-bottom:1px solid #1a2230;display:flex;gap:12px;align-items:center;justify-content:space-between}
+    .brand{display:flex;flex-direction:column;gap:4px}
+    .brand b{font-size:18px}
+    .brand span{font-size:12px;opacity:.8}
+    .nav{display:flex;gap:10px;flex-wrap:wrap}
+    a{color:#9bd1ff;text-decoration:none}
+    .wrap{max-width:1100px;margin:0 auto;padding:18px}
+    .hero{padding:16px;border:1px solid #1a2230;border-radius:14px;background:#0f1621}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:14px}
+    .card{border:1px solid #1a2230;border-radius:14px;padding:14px;background:#0f1621}
+    .card h3{margin:0 0 6px 0}
+    .card p{margin:0 0 12px 0;opacity:.85;font-size:13px;line-height:1.35}
+    .btns{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:10px 12px;border-radius:12px;border:1px solid #2a3a52;background:#101a29}
+    .btn.primary{background:#17304a;border-color:#2a6cb0}
+    .mini{font-size:12px;opacity:.8}
+    footer{padding:18px;opacity:.75;border-top:1px solid #1a2230}
+    .chip{display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid #1a2230;background:#0c121b;font-size:12px;margin-right:8px;margin-top:8px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <b>BuildLogic App Store</b>
+      <span>Commercial tools for QS, Contracts & Project Teams</span>
+    </div>
+    <div class="nav">
+      <a href="help.html">Help & Q&A</a>
+      <a href="#chat">Chat</a>
+      <a href="app/p1.html">P1</a>
+      <a href="app/p2.html">P2</a>
+      <a href="app/microtools.html">Micro-Tools</a>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <div class="hero">
+      <div class="mini">Fast path:</div>
+      <div style="margin-top:8px">
+        <span class="chip">Pick tool → Pay → Access</span>
+        <span class="chip">No fluff, just outputs</span>
+        <span class="chip">Built for UK contracting</span>
+      </div>
+      <p style="margin-top:12px;opacity:.9">
+        Start with P1 (QS core). Use P2 for contract-risk + procurement strategy. Add Micro-Tools for JCT/NEC tasks.
+      </p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>P1 — QS Core Suite</h3>
+        <p>Cost planning, CSA checking, cashflow and commercial tracking. Best first purchase.</p>
+        <div class="btns">
+          <a class="btn primary" href="app/p1.html">View P1 Tools</a>
+          <a class="btn" href="{{P1_STRIPE_LINK}}">Buy P1 (Stripe)</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>P2 — Contract & Risk</h3>
+        <p>JCT/NEC risk scanning and procurement strategy outputs (early access bundles).</p>
+        <div class="btns">
+          <a class="btn primary" href="app/p2.html">View P2 Tools</a>
+          <a class="btn" href="{{P2_STRIPE_LINK}}">Buy P2 (Stripe)</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Micro-Tools — JCT & NEC</h3>
+        <p>Small tools that solve one painful thing fast (not a giant suite).</p>
+        <div class="btns">
+          <a class="btn primary" href="app/microtools.html">View Micro-Tools</a>
+          <a class="btn" href="{{MICROTOOLS_BUNDLE_STRIPE_LINK}}">Buy Bundle (Stripe)</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="chat" class="grid" style="margin-top:14px">
+      <div class="card">
+        <h3>Chat (Sales)</h3>
+        <p>Ask what to buy, bundling, or suitability. Keep answers short + commercial.</p>
+        <div class="btns">
+          <a class="btn primary" href="mailto:sales@YOURDOMAIN?subject=BuildLogic%20Sales%20Question">Email Sales</a>
+          <a class="btn" href="{{SALES_CHATBOT_LINK}}">Open Sales Bot</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Chat (Technical)</h3>
+        <p>Data inputs, errors, exports, feature questions. Keep it practical.</p>
+        <div class="btns">
+          <a class="btn primary" href="mailto:support@YOURDOMAIN?subject=BuildLogic%20Support%20Help">Email Support</a>
+          <a class="btn" href="{{TECH_CHATBOT_LINK}}">Open Support Bot</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © BuildLogic — <a href="help.html">Help</a> · <a href="access/success.html">Access</a>
+  </footer>
+</body>
+</html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BuildLogic App Store</title>
+  <style>
+    body{font-family:system-ui,Arial;margin:0;background:#0b0f14;color:#e8eef6}
+    header{padding:20px 18px;border-bottom:1px solid #1a2230;display:flex;gap:12px;align-items:center;justify-content:space-between}
+    .brand{display:flex;flex-direction:column;gap:4px}
+    .brand b{font-size:18px}
+    .brand span{font-size:12px;opacity:.8}
+    .nav{display:flex;gap:10px;flex-wrap:wrap}
+    a{color:#9bd1ff;text-decoration:none}
+    .wrap{max-width:1100px;margin:0 auto;padding:18px}
+    .hero{padding:16px;border:1px solid #1a2230;border-radius:14px;background:#0f1621}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:14px}
+    .card{border:1px solid #1a2230;border-radius:14px;padding:14px;background:#0f1621}
+    .card h3{margin:0 0 6px 0}
+    .card p{margin:0 0 12px 0;opacity:.85;font-size:13px;line-height:1.35}
+    .btns{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:10px 12px;border-radius:12px;border:1px solid #2a3a52;background:#101a29}
+    .btn.primary{background:#17304a;border-color:#2a6cb0}
+    .mini{font-size:12px;opacity:.8}
+    footer{padding:18px;opacity:.75;border-top:1px solid #1a2230}
+    .chip{display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid #1a2230;background:#0c121b;font-size:12px;margin-right:8px;margin-top:8px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <b>BuildLogic App Store</b>
+      <span>Commercial tools for QS, Contracts & Project Teams</span>
+    </div>
+    <div class="nav">
+      <a href="help.html">Help & Q&A</a>
+      <a href="#chat">Chat</a>
+      <a href="app/p1.html">P1</a>
+      <a href="app/p2.html">P2</a>
+      <a href="app/microtools.html">Micro-Tools</a>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <div class="hero">
+      <div class="mini">Fast path:</div>
+      <div style="margin-top:8px">
+        <span class="chip">Pick tool → Pay → Access</span>
+        <span class="chip">No fluff, just outputs</span>
+        <span class="chip">Built for UK contracting</span>
+      </div>
+      <p style="margin-top:12px;opacity:.9">
+        Start with P1 (QS core). Use P2 for contract-risk + procurement strategy. Add Micro-Tools for JCT/NEC tasks.
+      </p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>P1 — QS Core Suite</h3>
+        <p>Cost planning, CSA checking, cashflow and commercial tracking. Best first purchase.</p>
+        <div class="btns">
+          <a class="btn primary" href="app/p1.html">View P1 Tools</a>
+          <a class="btn" href="{{P1_STRIPE_LINK}}">Buy P1 (Stripe)</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>P2 — Contract & Risk</h3>
+        <p>JCT/NEC risk scanning and procurement strategy outputs (early access bundles).</p>
+        <div class="btns">
+          <a class="btn primary" href="app/p2.html">View P2 Tools</a>
+          <a class="btn" href="{{P2_STRIPE_LINK}}">Buy P2 (Stripe)</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Micro-Tools — JCT & NEC</h3>
+        <p>Small tools that solve one painful thing fast (not a giant suite).</p>
+        <div class="btns">
+          <a class="btn primary" href="app/microtools.html">View Micro-Tools</a>
+          <a class="btn" href="{{MICROTOOLS_BUNDLE_STRIPE_LINK}}">Buy Bundle (Stripe)</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="chat" class="grid" style="margin-top:14px">
+      <div class="card">
+        <h3>Chat (Sales)</h3>
+        <p>Ask what to buy, bundling, or suitability. Keep answers short + commercial.</p>
+        <div class="btns">
+          <a class="btn primary" href="mailto:sales@YOURDOMAIN?subject=BuildLogic%20Sales%20Question">Email Sales</a>
+          <a class="btn" href="{{SALES_CHATBOT_LINK}}">Open Sales Bot</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Chat (Technical)</h3>
+        <p>Data inputs, errors, exports, feature questions. Keep it practical.</p>
+        <div class="btns">
+          <a class="btn primary" href="mailto:support@YOURDOMAIN?subject=BuildLogic%20Support%20Help">Email Support</a>
+          <a class="btn" href="{{TECH_CHATBOT_LINK}}">Open Support Bot</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © BuildLogic — <a href="help.html">Help</a> · <a href="access/success.html">Access</a>
+  </footer>
+</body>
+</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
